@@ -6,9 +6,9 @@ consumer = KafkaConsumer('MSK-Provisioned-Topic',bootstrap_servers=['b-2.msktuto
 
 #Establishing the connection
 conn = psycopg2.connect(
-    database = "mskpg",
-    user = "postgres",
-    password = "postgres",
+    database = "msk_postgresql",
+    user = "postgresql",
+    password = "1qaz2wsx",
     host = "database-1.cttr1wnurh5r.us-east-1.rds.amazonaws.com",
     port = "5432"
 )
