@@ -9,7 +9,7 @@ conn = mysql.connector.connect(
     database = "msk_mysql",
     user = "admin",
     password = "1qaz2wsx",
-    host = "database-3.cttr1wnurh5r.us-east-1.rds.amazonaws.com"
+    host = "database-mysql-msk.cttr1wnurh5r.us-east-1.rds.amazonaws.com"
 )
 
 #Setting auto commit false
