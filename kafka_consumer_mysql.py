@@ -6,9 +6,9 @@ consumer = KafkaConsumer('MSK-Provisioned-Topic',bootstrap_servers=['b-2.msktuto
 
 #Establishing the connection
 conn = mysql.connector.connect(
-    database = "mskpg",
+    database = "msk_mysql",
     user = "admin",
-    password = "amit2000",
+    password = "1qaz2wsx",
     host = "database-3.cttr1wnurh5r.us-east-1.rds.amazonaws.com"
 )
 
