@@ -2,7 +2,7 @@ import mysql.connector
 from kafka import KafkaConsumer
 
 num=100
-consumer = KafkaConsumer('awskafkatopic1',bootstrap_servers=['b-2.msktutorialcluster.dt472o.c23.kafka.us-east-1.amazonaws.com:9092'])
+consumer = KafkaConsumer('MSK-Provisioned-Topic',bootstrap_servers=['b-2.msktutorialcluster.dt472o.c23.kafka.us-east-1.amazonaws.com:9092'])
 
 #Establishing the connection
 conn = mysql.connector.connect(
@@ -14,7 +14,7 @@ conn = mysql.connector.connect(
 
 #Setting auto commit false
 #conn.autocommit = True
-print("Connected to DB Sucessfully")
+print("Connected to MYSQL DB Sucessfully")
 
 #Setting auto commit false
 cur = conn.cursor()
