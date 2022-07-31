@@ -9,7 +9,7 @@ conn = psycopg2.connect(
     database = "msk_postgresql",
     user = "postgresql",
     password = "1qaz2wsx",
-    host = "database-1.cttr1wnurh5r.us-east-1.rds.amazonaws.com",
+    host = "database-postgre-msk.cttr1wnurh5r.us-east-1.rds.amazonaws.com",
     port = "5432"
 )
 
