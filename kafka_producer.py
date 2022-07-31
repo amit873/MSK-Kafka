@@ -7,5 +7,5 @@ f = open("/home/ec2-user/Data.csv","r")
 
 for msg in f:
     data = msg
-    prod.send('awskafkatopic1',json.dumps(data).encode('utf-8'))
+    prod.send('MSK-Provisioned-Topic',json.dumps(data).encode('utf-8'))
     sleep(2)
