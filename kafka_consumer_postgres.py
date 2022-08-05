@@ -37,8 +37,8 @@ for msg in consumer:
     print(city)
     print(country)
     print("-----------")
-    cur.execute('''INSERT INTO msk-schema.msk_postgresql_table("username","sub_no","city","country") VALUES ('{}',{},'{}','{}')'''.format(name,num,city,country))
-    #cur.execute('''INSERT INTO msk-schema.msk_postgresql_table(username,sub_no,city,country) VALUES ('Amit',602,'Kumar','Gupta')''')
+    cur.execute('''INSERT INTO msk_schema.msk_postgresql_table("username","sub_no","city","country") VALUES ('{}',{},'{}','{}')'''.format(name,num,city,country))
+    #cur.execute('''INSERT INTO msk_schema.msk_postgresql_table(username,sub_no,city,country) VALUES ('Amit',602,'Kumar','Gupta')''')
     
     # Commit your changes in the database
     conn.commit
